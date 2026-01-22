@@ -23,6 +23,7 @@ export interface WorkoutDay {
   day: string
   type: string
   details?: string[]
+  image?: string
 }
 
 defineProps<{

@@ -111,13 +111,13 @@ import type { WorkoutDay } from '~/components/WorkoutWeek.vue'
 // Data
 const weeksData: Record<number, WorkoutDay[]> = {
   1: [
-    { day: 'Maandag', type: 'Benen (Lower Body Focus)', details: ['Squats: 4 sets x 8 reps', 'Leg Press: 3 sets x 12 reps', 'Lunges: 3 sets x 10 reps per been', 'Leg Extensions: 3 sets x 15 reps', 'Calf Raises: 4 sets x 15 reps'] },
-    { day: 'Dinsdag', type: 'Push (Borst / Schouders / Triceps)', details: ['Bench Press: 4 sets x 8 reps', 'Overhead Press: 3 sets x 10 reps', 'Incline Dumbbell Press: 3 sets x 10 reps', 'Lateral Raises: 4 sets x 15 reps', 'Tricep Pushdowns: 3 sets x 12 reps'] },
-    { day: 'Woensdag', type: 'Pull (Rug / Biceps)', details: ['Deadlift: 3 sets x 5 reps', 'Pull Ups: 3 sets (max reps)', 'Barbell Rows: 4 sets x 10 reps', 'Face Pulls: 3 sets x 15 reps', 'Bicep Curls: 3 sets x 12 reps'] },
-    { day: 'Donderdag', type: 'Actief Herstel', details: ['Lange wandeling (60 min)', 'Stretching / Mobility flow', 'Yoga sessie'] },
-    { day: 'Vrijdag', type: 'Actief Herstel', details: ['Lichte cardio (fietsen/zwemmen)', 'Foam rolling full body'] },
-    { day: 'Zaterdag', type: 'HIIT & Conditie', details: ['Warming up: 10 min joggen', 'Intervals: 30 sec sprint / 30 sec rust (15 min)', 'Burpees: 3 sets x 15', 'Mountain Climbers: 3 sets x 30 sec', 'Cool down: 10 min wandelen'] },
-    { day: 'Zondag', type: 'Benen (Lower Body Focus)', details: ['Romanian Deadlifts: 4 sets x 10 reps', 'Goblet Squats: 3 sets x 12 reps', 'Hamstring Curls: 3 sets x 15 reps', 'Bulgarian Split Squats: 3 sets x 10 reps'] },
+    { day: 'Maandag', type: 'Benen (Lower Body Focus)', image: '/images/osman-legs.png', details: ['Squats: 4 sets x 8 reps', 'Leg Press: 3 sets x 12 reps', 'Lunges: 3 sets x 10 reps per been', 'Leg Extensions: 3 sets x 15 reps', 'Calf Raises: 4 sets x 15 reps'] },
+    { day: 'Dinsdag', type: 'Push (Borst / Schouders / Triceps)', image: '/images/osman-push.png', details: ['Bench Press: 4 sets x 8 reps', 'Overhead Press: 3 sets x 10 reps', 'Incline Dumbbell Press: 3 sets x 10 reps', 'Lateral Raises: 4 sets x 15 reps', 'Tricep Pushdowns: 3 sets x 12 reps'] },
+    { day: 'Woensdag', type: 'Pull (Rug / Biceps)', image: '/images/osman-pull.png', details: ['Deadlift: 3 sets x 5 reps', 'Pull Ups: 3 sets (max reps)', 'Barbell Rows: 4 sets x 10 reps', 'Face Pulls: 3 sets x 15 reps', 'Bicep Curls: 3 sets x 12 reps'] },
+    { day: 'Donderdag', type: 'Actief Herstel', image: '/images/osman-recovery.png', details: ['Lange wandeling (60 min)', 'Stretching / Mobility flow', 'Yoga sessie'] },
+    { day: 'Vrijdag', type: 'Actief Herstel', image: '/images/osman-recovery.png', details: ['Lichte cardio (fietsen/zwemmen)', 'Foam rolling full body'] },
+    { day: 'Zaterdag', type: 'HIIT & Conditie', image: '/images/osman-hiit.png', details: ['Warming up: 10 min joggen', 'Intervals: 30 sec sprint / 30 sec rust (15 min)', 'Burpees: 3 sets x 15', 'Mountain Climbers: 3 sets x 30 sec', 'Cool down: 10 min wandelen'] },
+    { day: 'Zondag', type: 'Benen (Lower Body Focus)', image: '/images/osman-legs.png', details: ['Romanian Deadlifts: 4 sets x 10 reps', 'Goblet Squats: 3 sets x 12 reps', 'Hamstring Curls: 3 sets x 15 reps', 'Bulgarian Split Squats: 3 sets x 10 reps'] },
   ],
   2: [
      { day: 'Maandag', type: 'Upper Power', details: ['Bench Press: 5x5', 'Barbell Row: 5x5', 'Overhead Press: 3x8', 'Pull Ups: 3x8'] },

@@ -14,6 +14,11 @@
         </div>
 
         <div class="space-y-6 max-h-[60vh] overflow-y-auto pr-2 custom-scrollbar">
+
+          <div v-if="day?.image" class="aspect-video rounded-xl overflow-hidden shadow-lg mb-4">
+            <img :src="day.image" :alt="day.type" class="w-full h-full object-cover">
+          </div>
+
           <!-- Main Workout Content -->
            <div v-if="day?.details">
                <ul class="space-y-3">
