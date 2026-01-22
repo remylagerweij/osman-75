@@ -4,14 +4,14 @@
       v-for="day in days"
       :key="day.day"
       @click="$emit('open-day', day)"
-      class="glass p-5 rounded-3xl cursor-pointer border border-slate-700/50 card-glow transition-all animate-pop"
+      class="glass p-5 rounded-3xl cursor-pointer border border-white/5 card-glow transition-all animate-pop group"
     >
       <div class="flex justify-between items-start mb-4">
-        <span class="text-[10px] font-black uppercase text-blue-500 tracking-widest">{{ day.day }}</span>
-        <span class="material-symbols-outlined text-slate-600">open_in_full</span>
+        <span class="text-[10px] font-black uppercase text-gs-red tracking-widest group-hover:text-gs-yellow transition-colors">{{ day.day }}</span>
+        <span class="material-symbols-outlined text-zinc-600 group-hover:text-white transition-colors">open_in_full</span>
       </div>
-      <h4 class="font-bold text-lg leading-tight mb-2">{{ day.type }}</h4>
-      <div class="flex items-center gap-2 text-xs text-slate-400">
+      <h4 class="font-bold text-lg leading-tight mb-2 group-hover:text-gs-yellow transition-colors">{{ day.type }}</h4>
+      <div class="flex items-center gap-2 text-xs text-zinc-500">
         <span class="material-symbols-outlined text-sm">schedule</span> 90m Totaal
       </div>
     </div>

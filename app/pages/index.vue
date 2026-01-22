@@ -23,16 +23,16 @@
       <!-- Top Stats Section -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
         <!-- Nutrition Card -->
-        <StatCard icon="nutrition" title="Voeding" iconClass="text-blue-400">
-          <div class="flex justify-between border-b border-slate-700 pb-1">
-            <span class="text-slate-400">Calorieën:</span>
+        <StatCard icon="nutrition" title="Voeding" iconClass="text-gs-yellow">
+          <div class="flex justify-between border-b border-white/5 pb-1">
+            <span class="text-zinc-400">Calorieën:</span>
             <span class="font-bold">1800 - 2200 kcal</span>
           </div>
-          <div class="flex justify-between border-b border-slate-700 pb-1">
-            <span class="text-slate-400">Eiwit:</span>
+          <div class="flex justify-between border-b border-white/5 pb-1">
+            <span class="text-zinc-400">Eiwit:</span>
             <span class="font-bold">2g x kg Lichaamsgewicht</span>
           </div>
-          <p class="text-[10px] text-slate-500 italic mt-2">Overige macro's zijn optimalisaties.</p>
+          <p class="text-[10px] text-zinc-500 italic mt-2">Overige macro's zijn optimalisaties.</p>
         </StatCard>
 
         <!-- Weight Management Card -->
@@ -40,13 +40,13 @@
           icon="monitor_weight"
           title="Gewichtsverlies"
           iconClass="text-green-400"
-          containerClass="border-l-4 border-l-blue-500"
+          containerClass="border-l-4 border-l-green-500"
         >
           <div class="flex justify-between">
-            <span class="text-slate-400">Doel per week:</span>
+            <span class="text-zinc-400">Doel per week:</span>
             <span class="font-bold">500g - 1kg</span>
           </div>
-          <div class="bg-blue-900/30 p-2 rounded text-xs text-blue-200 leading-tight">
+          <div class="bg-green-900/10 p-2 rounded text-xs text-green-200 leading-tight border border-green-500/20">
             <strong>Protocol:</strong> Val je meer dan 1kg af? Verhoog je inname direct met <strong>+200 kcal</strong>.
           </div>
         </StatCard>
@@ -54,9 +54,9 @@
         <!-- Sleep Hygiene Card -->
         <StatCard icon="bedtime" title="Slaap Hygiëne" iconClass="text-indigo-400">
           <ul class="text-sm space-y-2">
-            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs text-red-400">timer_off</span> Geen eten 3 uur voor slaap</li>
+            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs text-gs-red">timer_off</span> Geen eten 3 uur voor slaap</li>
             <li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs text-blue-400">water_drop</span> Weinig drinken 2 uur voor slaap</li>
-            <li class="text-[10px] text-slate-500 italic ml-6">* Sips toegestaan bij droge mond</li>
+            <li class="text-[10px] text-zinc-500 italic ml-6">* Sips toegestaan bij droge mond</li>
           </ul>
         </StatCard>
       </div>
@@ -65,16 +65,16 @@
       <section class="mb-12">
         <div class="flex flex-col md:flex-row justify-between items-end gap-6 mb-8">
           <div>
-            <h2 class="text-3xl font-black italic uppercase tracking-tight">Trainingsschema</h2>
-            <p class="text-slate-400">Klik op een dag voor het volledige 90-minuten programma.</p>
+            <h2 class="text-3xl font-black italic uppercase tracking-tight text-white mb-1">Trainingsschema</h2>
+            <p class="text-zinc-400">Klik op een dag voor het volledige 90-minuten programma.</p>
           </div>
-          <div class="flex bg-slate-800 p-1 rounded-2xl">
+          <div class="flex bg-surface p-1 rounded-2xl border border-white/5">
             <button
               v-for="wk in [1, 2, 3]"
               :key="wk"
               @click="activeWeek = wk"
               class="px-6 py-2 rounded-xl text-sm font-bold transition-all"
-              :class="activeWeek === wk ? 'tab-active' : 'text-slate-400 hover:text-white'"
+              :class="activeWeek === wk ? 'tab-active' : 'text-zinc-400 hover:text-white'"
             >
               Week {{ wk }}
             </button>

@@ -4,13 +4,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        slate: {
-          800: '#1e293b', // Adjusting for glass effect base if needed, but standard slate is fine.
-          900: '#0f172a',
-        },
-        blue: {
-          600: '#2563eb',
-        }
+        background: '#09090b', // Zinc 950 - True Dark
+        surface: '#18181b', // Zinc 900
+        'gs-red': '#A90432',
+        'gs-yellow': '#FDB912',
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
