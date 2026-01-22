@@ -1,14 +1,20 @@
 <template>
   <div class="min-h-screen pb-24" style="overflow: auto;">
     <!-- Header Hero -->
-    <header class="relative h-64 flex items-center justify-center overflow-hidden border-b border-slate-800">
-      <img src="/images/gym-background.png" class="absolute inset-0 w-full h-full object-cover opacity-40 animate-pan" alt="Gym Background">
-      <div class="relative z-10 text-center px-4">
-        <h1 class="text-5xl md:text-7xl font-black italic tracking-tighter uppercase mb-2 animate-pop">Osman's 75 Hard</h1>
+    <header class="relative h-[80vh] flex items-center justify-center overflow-hidden border-b border-slate-800">
+      <div class="absolute inset-0 bg-black/60 z-10"></div>
+      <img src="/images/osman-transformation.png" class="absolute inset-0 w-full h-full object-cover animate-pan" alt="Transformation">
+      <div class="relative z-20 text-center px-4 max-w-4xl mx-auto">
+        <h1 class="text-6xl md:text-8xl font-black italic tracking-tighter uppercase mb-4 animate-pop drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)]">
+          <span class="text-white">Osman's</span> <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-yellow-500">75 Hard</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-slate-200 font-medium mb-8 max-w-2xl mx-auto drop-shadow-md">
+          Van Dromen naar Doen. De ultieme transformatie begint hier.
+        </p>
         <div class="flex flex-wrap justify-center gap-4 text-sm font-bold uppercase tracking-widest animate-pop" style="animation-delay: 0.1s; animation-fill-mode: backwards;">
-          <span class="bg-blue-600 px-3 py-1 rounded">90 Min Activiteit</span>
-          <span class="bg-blue-600 px-3 py-1 rounded">3L Water</span>
-          <span class="bg-blue-600 px-3 py-1 rounded">Geen Excuses</span>
+          <span class="bg-red-600 px-6 py-2 rounded-full shadow-lg shadow-red-900/50 hover:scale-105 transition-transform cursor-default">90 Min Activiteit</span>
+          <span class="bg-blue-600 px-6 py-2 rounded-full shadow-lg shadow-blue-900/50 hover:scale-105 transition-transform cursor-default">3L Water</span>
+          <span class="bg-yellow-600 px-6 py-2 rounded-full shadow-lg shadow-yellow-900/50 hover:scale-105 transition-transform cursor-default">Geen Excuses</span>
         </div>
       </div>
     </header>
