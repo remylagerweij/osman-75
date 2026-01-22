@@ -4,13 +4,13 @@
 
 @layer base {
   body {
-    @apply bg-slate-900 text-slate-50 font-sans antialiased;
+    @apply bg-neutral-900 text-neutral-50 font-sans antialiased;
   }
 }
 
 @layer components {
   .glass {
-    @apply bg-slate-800/70 backdrop-blur-xl border border-white/10;
+    @apply bg-neutral-800/70 backdrop-blur-xl border border-white/10;
   }
 
   .card-glow {
@@ -18,18 +18,18 @@
   }
 
   .card-glow:hover {
-    box-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
-    @apply border-blue-500;
+    box-shadow: 0 0 20px rgba(169, 4, 50, 0.4);
+    @apply border-gala-red-500;
   }
 
   .tab-active {
-    @apply bg-blue-600 text-white;
+    @apply bg-gala-red-600 text-white;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+    box-shadow: 0 4px 12px rgba(169, 4, 50, 0.3);
   }
 
   .modal-blur {
     backdrop-filter: blur(8px);
-    background: rgba(15, 23, 42, 0.8);
+    background: rgba(10, 10, 10, 0.85);
   }
 }

@@ -1,20 +1,20 @@
 <template>
   <div class="min-h-screen pb-24" style="overflow: auto;">
     <!-- Header Hero -->
-    <header class="relative h-[80vh] flex items-center justify-center overflow-hidden border-b border-slate-800">
+    <header class="relative h-[80vh] flex items-center justify-center overflow-hidden border-b border-neutral-800">
       <div class="absolute inset-0 bg-black/60 z-10"></div>
       <img src="/images/osman-transformation.png" class="absolute inset-0 w-full h-full object-cover animate-pan" alt="Transformation">
       <div class="relative z-20 text-center px-4 max-w-4xl mx-auto">
         <h1 class="text-6xl md:text-8xl font-black italic tracking-tighter uppercase mb-4 animate-pop drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)]">
           <span class="text-white">Osman's</span> <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-yellow-500">75 Hard</span>
         </h1>
-        <p class="text-xl md:text-2xl text-slate-200 font-medium mb-8 max-w-2xl mx-auto drop-shadow-md">
+        <p class="text-xl md:text-2xl text-neutral-200 font-medium mb-8 max-w-2xl mx-auto drop-shadow-md">
           Van Dromen naar Doen. De ultieme transformatie begint hier.
         </p>
         <div class="flex flex-wrap justify-center gap-4 text-sm font-bold uppercase tracking-widest animate-pop" style="animation-delay: 0.1s; animation-fill-mode: backwards;">
-          <span class="bg-red-600 px-6 py-2 rounded-full shadow-lg shadow-red-900/50 hover:scale-105 transition-transform cursor-default">90 Min Activiteit</span>
-          <span class="bg-blue-600 px-6 py-2 rounded-full shadow-lg shadow-blue-900/50 hover:scale-105 transition-transform cursor-default">3L Water</span>
-          <span class="bg-yellow-600 px-6 py-2 rounded-full shadow-lg shadow-yellow-900/50 hover:scale-105 transition-transform cursor-default">Geen Excuses</span>
+          <span class="bg-gala-red-600 px-6 py-2 rounded-full shadow-lg shadow-gala-red-900/50 hover:scale-105 transition-transform cursor-default">90 Min Activiteit</span>
+          <span class="bg-gala-yellow-500 text-black px-6 py-2 rounded-full shadow-lg shadow-gala-yellow-900/50 hover:scale-105 transition-transform cursor-default">3L Water</span>
+          <span class="bg-gala-red-600 px-6 py-2 rounded-full shadow-lg shadow-gala-red-900/50 hover:scale-105 transition-transform cursor-default">Geen Excuses</span>
         </div>
       </div>
     </header>
@@ -23,16 +23,16 @@
       <!-- Top Stats Section -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
         <!-- Nutrition Card -->
-        <StatCard icon="nutrition" title="Voeding" iconClass="text-gs-yellow">
-          <div class="flex justify-between border-b border-white/5 pb-1">
-            <span class="text-zinc-400">Calorieën:</span>
+        <StatCard icon="nutrition" title="Voeding" iconClass="text-gala-red-400">
+          <div class="flex justify-between border-b border-neutral-700 pb-1">
+            <span class="text-neutral-400">Calorieën:</span>
             <span class="font-bold">1800 - 2200 kcal</span>
           </div>
-          <div class="flex justify-between border-b border-white/5 pb-1">
-            <span class="text-zinc-400">Eiwit:</span>
+          <div class="flex justify-between border-b border-neutral-700 pb-1">
+            <span class="text-neutral-400">Eiwit:</span>
             <span class="font-bold">2g x kg Lichaamsgewicht</span>
           </div>
-          <p class="text-[10px] text-zinc-500 italic mt-2">Overige macro's zijn optimalisaties.</p>
+          <p class="text-[10px] text-neutral-500 italic mt-2">Overige macro's zijn optimalisaties.</p>
         </StatCard>
 
         <!-- Weight Management Card -->
@@ -40,13 +40,13 @@
           icon="monitor_weight"
           title="Gewichtsverlies"
           iconClass="text-green-400"
-          containerClass="border-l-4 border-l-green-500"
+          containerClass="border-l-4 border-l-gala-red-500"
         >
           <div class="flex justify-between">
-            <span class="text-zinc-400">Doel per week:</span>
+            <span class="text-neutral-400">Doel per week:</span>
             <span class="font-bold">500g - 1kg</span>
           </div>
-          <div class="bg-green-900/10 p-2 rounded text-xs text-green-200 leading-tight border border-green-500/20">
+          <div class="bg-gala-red-900/30 p-2 rounded text-xs text-gala-red-200 leading-tight">
             <strong>Protocol:</strong> Val je meer dan 1kg af? Verhoog je inname direct met <strong>+200 kcal</strong>.
           </div>
         </StatCard>
@@ -54,9 +54,9 @@
         <!-- Sleep Hygiene Card -->
         <StatCard icon="bedtime" title="Slaap Hygiëne" iconClass="text-indigo-400">
           <ul class="text-sm space-y-2">
-            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs text-gs-red">timer_off</span> Geen eten 3 uur voor slaap</li>
-            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs text-blue-400">water_drop</span> Weinig drinken 2 uur voor slaap</li>
-            <li class="text-[10px] text-zinc-500 italic ml-6">* Sips toegestaan bij droge mond</li>
+            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs text-red-400">timer_off</span> Geen eten 3 uur voor slaap</li>
+            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs text-gala-red-400">water_drop</span> Weinig drinken 2 uur voor slaap</li>
+            <li class="text-[10px] text-neutral-500 italic ml-6">* Sips toegestaan bij droge mond</li>
           </ul>
         </StatCard>
       </div>
@@ -65,16 +65,16 @@
       <section class="mb-12">
         <div class="flex flex-col md:flex-row justify-between items-end gap-6 mb-8">
           <div>
-            <h2 class="text-3xl font-black italic uppercase tracking-tight text-white mb-1">Trainingsschema</h2>
-            <p class="text-zinc-400">Klik op een dag voor het volledige 90-minuten programma.</p>
+            <h2 class="text-3xl font-black italic uppercase tracking-tight">Trainingsschema</h2>
+            <p class="text-neutral-400">Klik op een dag voor het volledige 90-minuten programma.</p>
           </div>
-          <div class="flex bg-surface p-1 rounded-2xl border border-white/5">
+          <div class="flex bg-neutral-800 p-1 rounded-2xl">
             <button
               v-for="wk in [1, 2, 3]"
               :key="wk"
               @click="activeWeek = wk"
               class="px-6 py-2 rounded-xl text-sm font-bold transition-all"
-              :class="activeWeek === wk ? 'tab-active' : 'text-zinc-400 hover:text-white'"
+              :class="activeWeek === wk ? 'tab-active' : 'text-neutral-400 hover:text-white'"
             >
               Week {{ wk }}
             </button>
@@ -85,10 +85,10 @@
         <div class="min-h-[300px]">
           <transition
             enter-active-class="transition duration-300 ease-out"
-            enter-from-class="opacity-0 translate-y-4"
-            enter-to-class="opacity-100 translate-y-0"
+            enter-from-class="opacity-0 tranneutral-y-4"
+            enter-to-class="opacity-100 tranneutral-y-0"
             leave-active-class="transition duration-200 ease-in absolute opacity-0"
-            leave-to-class="opacity-0 -translate-y-4"
+            leave-to-class="opacity-0 -tranneutral-y-4"
             mode="out-in"
           >
             <WorkoutWeek :key="activeWeek" :days="weeksData[activeWeek]" @open-day="openModal" />
