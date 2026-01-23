@@ -14,7 +14,9 @@
         <div class="flex flex-wrap justify-center gap-4 text-sm font-bold uppercase tracking-widest animate-pop" style="animation-delay: 0.1s; animation-fill-mode: backwards;">
           <span class="bg-gala-red-600 px-6 py-2 rounded-full shadow-lg shadow-gala-red-900/50 hover:scale-105 transition-transform cursor-default">90 Min Activiteit</span>
           <span class="bg-gala-yellow-500 text-black px-6 py-2 rounded-full shadow-lg shadow-gala-yellow-900/50 hover:scale-105 transition-transform cursor-default">3L Water</span>
-          <span class="bg-gala-red-600 px-6 py-2 rounded-full shadow-lg shadow-gala-red-900/50 hover:scale-105 transition-transform cursor-default">Geen Excuses</span>
+          <NuxtLink to="/advies" class="bg-white text-black px-6 py-2 rounded-full shadow-lg shadow-white/20 hover:scale-105 transition-transform cursor-pointer flex items-center gap-2">
+             <span class="material-symbols-outlined text-sm">menu_book</span> Het Handboek
+          </NuxtLink>
         </div>
       </div>
     </header>
